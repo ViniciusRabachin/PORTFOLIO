@@ -1,0 +1,11 @@
+.topbar {
+  background-color: teal;
+  width: 400px;
+  height:50px;
+  text-align: center;
+}
+
+.topbar li {
+  display: inline-block;
+  
+}
