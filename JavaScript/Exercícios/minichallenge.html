@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini-challenge</title>
+</head>
+<style>
+    #redcircle {
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+        background-color: rgb(133, 14, 14);
+        float:left;
+    }
+
+    #yellowcircle {
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+        background-color: rgb(204, 201, 8);
+        float:left;
+        margin-left: 10px;
+    }
+    #greencircle {
+        width:100px;
+        height:100px;
+        border-radius: 100%;
+        background-color: rgb(24, 150, 51);
+        float:left;
+        margin-left: 10px;
+    }
+
+
+</style>
+<body>
+
+    <div id="redcircle"></div>
+    <div id="yellowcircle"></div>
+    <div id="greencircle"></div>
+    
+
+
+    <script>
+        
+        document.getElementById("redcircle").onclick = function (){
+            document.getElementById("redcircle").style.display = "none";
+        }
+
+        document.getElementById("yellowcircle").onclick = function (){
+            document.getElementById("yellowcircle").style.display = "none";
+        }
+
+        document.getElementById("greencircle").onclick = function (){
+            document.getElementById("greencircle").style.display = "none";
+        }
+
+
+    
+    
+    
+    </script>
+</body>
+</html>

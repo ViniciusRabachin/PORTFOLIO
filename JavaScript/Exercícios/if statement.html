@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="username" placeholder="username" id="name">
+        <input type="password" placeholder="password" id="pasS">
+        <button id="login">Login</button>
+
+    <script>
+        
+        
+           
+        
+        document.getElementById("login").onclick = function() { 
+            
+            var user = document.getElementById("name").value;
+            var pass = document.getElementById("pasS").value;
+
+            var correct = "Vini"
+            var correcT = 123
+
+            if (user == correct && pass == correcT) {
+                alert("Loggin Sucessful")
+            } else { 
+                alert("user or password is wrong!")
+                }
+        }
+        
+        
+        
+        
+        </script>
+    
+</body>
+</html>

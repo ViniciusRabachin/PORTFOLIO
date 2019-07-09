@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hello">Hello World!</p>
+
+    <button id="first">Click</button>
+
+    <p id="hello2">Rush...</p>
+
+    <button id="second">Click</button>
+
+    <button id="create">Click to create</button>
+    <p id="none"></p>
+
+    <button id="styling">Born to style</button>
+    <p id="Paragraph">My paragraph stylish!</p>
+
+    <script>
+        document.getElementById("first").onclick = function (){
+            document.getElementById("hello").innerHTML = "Hello Vini";
+        }
+        document.getElementById("second").onclick = function (){
+
+            document.getElementById("hello2").innerHTML = "I think " 
+            + document.getElementById("hello2").innerHTML + " you are learning JS.";
+        }
+
+        document.getElementById("create").onclick = function (){
+            document.getElementById("none").innerHTML = "You're amazing!"
+        }
+
+        document.getElementById("styling").onclick = function () {
+            document.getElementById("Paragraph").style.fontSize = "50px";
+        }
+ 
+    
+    
+    </script>
+</body>
+</html>
