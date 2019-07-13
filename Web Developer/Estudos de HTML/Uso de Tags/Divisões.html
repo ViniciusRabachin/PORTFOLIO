@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header, Navigation, Main, Aside, Article, Footer</title>
+</head>
+<body>
+<header> <!--Dentro de header pode conter título de um artigo, slogan, logotipo da empresa/site, menu de navegação, cabeçalhos de artigos e etc. -->
+    <h1>Título da página</h1>
+    <h2>Subtítulo da página</h2>
+</header>
+
+<nav><!--O elemento <nav>  serve para agrupar uma lista de links para outras partes do site, seja essa lista de navegação local ou global. Esses blocos de links podem estar em diferentes partes do layout, como no cabeçalho ou no rodapé.
+    -->
+    <ul>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">jQuery</a></li>
+    </ul>
+</nav>
+
+<section> <!--Representa uma seção do documento e geralmente contém um título que pode utilizar as tags de headings. É possível usar a section para descrever as seções/tópicos de um documento-->
+    <h3>Seção - HTML</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+</section>
+
+<article> <!--Esta seção é responsável por dar escopo à página de maior relevância servindo para identificar um conteúdo independente e de maior relevância dentro da webpage que pode ser distribuido em forma de feed, posts, artigos ou blocos de comentários. -->
+    <header> <!--Dentro da tag Article, é possível usar tags de header e footer para definir cabeçalho e rodapé ao artigo.-->
+        <h3> Título do Artigo </h2>
+        <p>Article é uma seção independente, porém relevante ao conteúdo. - Tudo que aprendo é aprendendo a googlear. </p>
+    </header>
+
+            <aside><!--Usado para definir um conteúdo de apoio ao conteúdo principal. Por exemplo, ao falar de HTML, poderia fazer um aside pra sugerir leituras para complementar o artigo principal-->
+                <nav>
+                    <ul>
+                        <h4>Sugestões de Alguma coisa para complementar este article (Uso de aside)</h3>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                        <li>Link 4</li>
+                    </ul>
+                </nav>
+            </aside>
+    <footer> 
+        <p>Rodapé do Article</p>
+    </footer>
+
+</article>
+
+<main> <!--O Elemento main especifica o conteudo principal da página e é o conteúdo de maior relevancia. 
+    Para ser considerada bem construída deve apresentar apenas uma Main-->
+    <h2>Título da Main</h2>
+    <p>Esta é a main do documento</p>
+    <article>
+        <h3>Subtítulo da Main</h3>
+            <p>Texto da Main</p>
+        
+    </article>
+    <aside>
+        <h4>Sugestão de leitura para complementar esta Main</h4>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
+    </aside>
+</main>
+
+<footer> <!--De forma análoga, o footer contém o rodapé de uma página em que este contém informações de contexto e direitos autorais.-->
+    <p>Todos os direitos de aprender estão reservados aos seres humanos. Projeto aprender por conta própria</p>
+
+    
+</footer>
+    
+</body>
+</html>

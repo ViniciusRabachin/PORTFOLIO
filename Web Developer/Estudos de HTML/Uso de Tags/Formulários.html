@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulários</title>
+</head>
+<body>
+<h1>Formulários</h1>
+
+<!--O atributo name serve para dar nome ao elemento que será enviado ao servidor (server-side) para ser reconhecido e obter o valor disto (value)-->
+
+<h2>Tipo de formulário</h2>
+
+<h3>Formulário de texto</h3>
+
+    <form>
+        First Name: <input type="text" name = "first-name"><br>
+        Last Name: <input type="text" name = "last-name">
+    </form>
+    <br>
+    <hr>
+<h3>Formulário de password</h3>
+
+<form>
+    Username: <input type="text" name = "user-id"><br>
+    Password: <input type="password" name="password-id">
+</form>
+<br>
+<hr>
+<h3>Formulário Multiple-line </h3><!--Usado para dar ao usuário a possibilidade de descrever algo-->
+    <form>
+        Descrição:<br>
+        <textarea rows="4" cols="50" name="description">
+ Sua descrição...
+            
+        </textarea>
+        
+    </form><br>
+    <hr>
+
+<h3>Formulário Checkbox</h3>
+
+Quais suas preferências de bebida?<br/>
+<form> 
+    <input type="checkbox" name="café" value="on" checked> Café
+    <input type="checkbox" name="chá" value="on"> Chá
+    <input type="checkbox" name="Cappuccino" value="on" checked> Cappuccino
+
+</form>
+<br>
+<hr>
+
+<h3>Formulário Radio Control</h3>
+
+Qual sua matéria favorita?<br><!--Tem algum atributo que precisa configurar que troca de seleção invés de manter selecionado e não poder deselecionar?
+
+solução: no atributo name deve conter os mesmos valores entre os itens para que o item não fique selecionado sempre-->
+    <form>
+        <input type="radio" name="disciplina" value="história"> História
+        <input type="radio" name="disciplina" value="biologia">Biologia
+        <input type="radio" name="disciplina" value="Física">Física
+    </form>
+    <br>
+    <hr>
+    <h3>Formulário de Lista de opções</h3>
+
+    <!--Atributo multiple dá a possibilidade de selecionar mais de 1 valor apertando Ctrl ou Command no item desejado-->
+    <form>
+        Disciplinas:
+        <select name="Disciplinas" multiple size="5">
+            <option value="historia">História</option>
+            <option value="português">Português</option>
+            <option value="Geografia">Geografia</option>
+            <option value="Matematica">Matemática</option>
+            <option value="Fisica">Física</option>
+        </select>
+    </form>
+    <br>
+    <hr>
+    <h3>Formulário de Upload</h3>
+    
+    Insira uma foto:
+    <form>
+    <input type="file" name= "fileupload" accept="image/*">
+    </form>
+    <br><hr>
+
+    <h3>Formulário de Botões</h3>
+
+    <form>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+        <input type="button" name="ok" value="OK">
+        <input type="image" name="imagebutton" src="img/*">
+    </form>
+    <br><hr>
+
+    <h3>Formulário Hidden</h3>
+
+        <!-- Esse formulário é útil para o server side para informar num formulário que página esta-->
+        Obs: O tipo hidden não é exibido para o client-side.<br><br>
+        <input type="hidden" name="pagenumber" value="1">
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+        <input type="button" name="ok" value="OK">
+
+    
+</body>
+</html>
